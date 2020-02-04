@@ -1,0 +1,21 @@
+spring:
+  profiles: dev
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show-sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: formation
+    url: jdbc:mysql://localhost:3306/game?serverTimezone=UTC
+
+
+---
+
+spring:
+  profiles: prod
