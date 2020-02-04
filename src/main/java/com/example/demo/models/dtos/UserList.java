@@ -21,9 +21,9 @@ public class UserList {
         UserList item = new UserList();
         item.setId(user.getId());
         item.setUsername(user.getUsername());
-
-        user.getCharacterList().stream().forEach(c -> item.getCharacterLists().add(CharacterList.from(c)));
-
+        user.getCharacterList().stream()
+                .forEach(c -> item.getCharacterLists()
+                        .add(CharacterList.from(c)));
         return item;
     }
 }

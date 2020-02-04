@@ -23,4 +23,5 @@ public class EntityCharacteristic implements Serializable {
     private Characteristic characteristic;
 
     private int value;
+
 }
